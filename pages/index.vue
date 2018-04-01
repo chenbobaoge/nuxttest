@@ -23,6 +23,7 @@
         <div class="div2">
           fdsfdsfdsf
         </div>
+        <nuxt-link to="/home">home</nuxt-link>
       </div>
     </div>
   </section>
