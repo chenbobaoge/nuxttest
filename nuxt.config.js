@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'spa',
   /*
   ** Headers of the page
   */
@@ -17,6 +18,11 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+  env: {
+
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+
+  },
   /*
   ** Build configuration
   */
@@ -34,5 +40,8 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  plugins: [
+    '~/plugins/moment'
+  ]
 }
